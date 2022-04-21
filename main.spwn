@@ -1,0 +1,13 @@
+// Get the input and UPPERCASE it
+let input = $.get_input("Input > ").uppercase()
+
+// You can add more letters to minfify the input
+lttrs = "AEIOU ".split("")
+
+// Loop through letters and remove them
+for i in 0..lttrs.length {
+    input = input.replace(lttrs[i], "")
+}
+
+// Print the output
+$.print(input)
